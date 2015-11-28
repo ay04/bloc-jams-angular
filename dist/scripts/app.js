@@ -1,5 +1,17 @@
 var blocJams = angular.module('blocJams', ['ui.router']);
 
+blocJams.controller('LandingCtrl', function($scope) {
+    
+});
+
+blocJams.controller('AlbumCtrl', function($scope) {
+    
+});
+
+blocJams.controller('CollectionCtrl', function($scope) {
+    
+});
+
 blocJams.config(function($stateProvider, $locationProvider) {
     
     $locationProvider.html5Mode({
@@ -8,11 +20,11 @@ blocJams.config(function($stateProvider, $locationProvider) {
     });
     
     $stateProvider
-//        .state('landing', {
-//        url:"/",
-//        controller:"LandingCtrl",
-//        templateUrl: "/templates/landing.html"
-//    })
+        .state('landing', {
+        url:"/",
+        controller:"LandingCtrl",
+        templateUrl: "/templates/landing.html"
+    })
         .state('collection', {
         url: "/collection",
         controller: "CollectionCtrl",
