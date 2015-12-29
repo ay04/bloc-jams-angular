@@ -1,4 +1,4 @@
-var blocJams = angular.module('blocJams', ['ui.router']);
+angular.module('blocJams', []);
 
 blocJams.controller('LandingCtrl', function($scope) {
     
