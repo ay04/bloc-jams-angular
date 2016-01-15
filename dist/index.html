@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="Bloc Jams">
+<html ng-app="BlocJams">
     <head lang="en">
         <meta charset="UTF-8">
     
@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/landing.css">
     <link rel="stylesheet" type="text/css" href="/styles/collection.css">
     <link rel="stylesheet" type="text/css" href="/styles/album.css">
+    <link rel="stylesheet" type="text/css" href="styles/player_bar.css">
     
     </head>
     
@@ -49,12 +50,13 @@
                 <h5 class="point-title">Mobile enabled</h5>
                 <p class="point-description">Listen to your music on the go. This streaming service is available on all platforms</p>
             </div>
+  <ui-view></ui-view>
             
         </section>
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="scripts/landing.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
         <script src="/scripts/app.js"></script>
 
 </body>
