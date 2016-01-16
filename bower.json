@@ -1,0 +1,21 @@
+{
+  "name": "bloc-jams-angular",
+  "description": "Starter project for the Bloc Frontend Web Development",
+  "main": "server.js",
+  "authors": [
+    "Bloc Inc"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ay04/bloc-jams-angular",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15"
+  }
+}
