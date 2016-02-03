@@ -1,11 +1,6 @@
-(function() {
+ (function() {
     function SongPlayer($rootScope, Fixtures) {
         var SongPlayer = {};
-
-        //  ___     _          _           _  _   _       _ _         _
-        // | _ \_ _(_)_ ____ _| |_ ___    /_\| |_| |_ _ _(_) |__ _  _| |_ ___ ___
-        // |  _/ '_| \ V / _` |  _/ -_)  / _ \  _|  _| '_| | '_ \ || |  _/ -_|_-<
-        // |_| |_| |_|\_/\__,_|\__\___| /_/ \_\__|\__|_| |_|_.__/\_,_|\__\___/__/
 
         /**
         * @desc Information for current album
@@ -17,11 +12,6 @@
         * @type {Object}
         */
         var currentBuzzObject = null;
-
-        //  ___     _          _          __              _   _
-        // | _ \_ _(_)_ ____ _| |_ ___   / _|_  _ _ _  __| |_(_)___ _ _  ___
-        // |  _/ '_| \ V / _` |  _/ -_) |  _| || | ' \/ _|  _| / _ \ ' \(_-<
-        // |_| |_| |_|\_/\__,_|\__\___| |_|  \_,_|_||_\__|\__|_\___/_||_/__/
 
         /**
         * @function setSong
@@ -75,11 +65,6 @@
             return currentAlbum.songs.indexOf(song);
         };
 
-        //  ___      _    _ _        _  _   _       _ _         _
-        // | _ \_  _| |__| (_)__    /_\| |_| |_ _ _(_) |__ _  _| |_ ___ ___
-        // |  _/ || | '_ \ | / _|  / _ \  _|  _| '_| | '_ \ || |  _/ -_|_-<
-        // |_|  \_,_|_.__/_|_\__| /_/ \_\__|\__|_| |_|_.__/\_,_|\__\___/__/
-
         /**
         * @desc Active song object from list of songs
         * @type {Object}
@@ -96,16 +81,10 @@
         */
         SongPlayer.volume = 80;
 
-        //  ___      _    _ _      __  __     _   _            _
-        // | _ \_  _| |__| (_)__  |  \/  |___| |_| |_  ___  __| |___
-        // |  _/ || | '_ \ | / _| | |\/| / -_)  _| ' \/ _ \/ _` (_-<
-        // |_|  \_,_|_.__/_|_\__| |_|  |_\___|\__|_||_\___/\__,_/__/
-
-        /**
-        * @function play
-        * @desc Play current or new song
-        * @param {Object} song
-        */
+        //* @function play
+        //* @desc Play current or new song
+        //* @param {Object} song
+        //
         SongPlayer.play = function(song) {
             song = song || SongPlayer.currentSong;
             if (SongPlayer.currentSong !== song) {
